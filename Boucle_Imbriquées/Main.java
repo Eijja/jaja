@@ -8,7 +8,7 @@ ENONCE :
 Afficher les tables de multiplications de x à y pour les valeurs de v à w (Exemple : tables de 0 à 11 pour les valeurs de 0 à 10)
 Faire  avec : 
 
-1. for/for: !!!!!
+1. for/for: PAS BON 
 
 2. while/while = OK
 
@@ -29,10 +29,62 @@ Faire  avec :
 
 //-------------
  
-	//  1.FOR, FOR
+	//  1.FOR, FOR PAS BON!!!
 		
 
+		
+				// INITIALISATION 
+				int j=0,i=0;
+				
+				// RANGE VALEUR X
+				int valeurMinX=1,valeurMaxX=5;
+				
+				
+				//RANGE VALEUR Y
+				int valeurMinY=6,valeurMaxY=10;
+				
+				//RANGE VALEUR V		
+				int valeurMinV=1,valeurMaxV=5;
+				
+				//RANGE VALEUR W	 
+				int valeurMinW=6,valeurMaxW=10;
+				
+				// VAL ALEATOIRE X
+				Random x = new Random();
+				int valeurX = valeurMinX + x.nextInt(valeurMaxX - valeurMinX);
+				
+				// VAL ALEATOIRE Y
+				Random y = new Random();
+				int valeurY  = valeurMinY + y.nextInt(valeurMaxY - valeurMinY);
+				
+				// VAL ALEATOIRE V
+				Random v = new Random();
+				int valeurV  = valeurMinV + v.nextInt(valeurMaxV - valeurMinV);		
+				
+				// VAL ALEATOIRE W
+				Random w = new Random();
+				int valeurW  = valeurMinW + w.nextInt(valeurMaxW - valeurMinW);	
+				
+				
+				// CONCATENATION AVEC LES VALEURS ALEA 
+				System.out.println("Les tables de multiplications de >>> "+valeurX+" <<< allant jusqu'à >>> "+valeurY+" <<< pour les valeurs de >>> "+valeurV+" <<< à >>> "+valeurW+" <<< sont les suivantes : ");
 
+				{for (j=valeurX; j<=valeurY;j++)
+				System.out.println("TABLE DE "+j);
+				{for (j=valeurV; j<=valeurW;j++) 
+				System.out.println(valeurX+" X "+j+" : -->"+valeurX*j);
+					
+			
+				}	
+				}	
+				
+	
+	
+	
+	
+	
+	
+	}}
 
 
 
